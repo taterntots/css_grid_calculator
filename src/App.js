@@ -4,10 +4,8 @@ import './App.css';
 function App() {
   return (
     <header className="App-header">
-      <div className="calculator-top">
-        0
-      </div>
       <div class="calculator-body">
+        <input class="calculator-top" type="number" placeholder="0"></input>
         <button class="button clear-button">C</button>
         <button class="button">÷</button>
         <button class="button">7</button>
@@ -25,7 +23,7 @@ function App() {
         <button class="button zero-button">0</button>
         <button class="button equals-button">=</button>
       </div>
-    </header>
+    </header >
   );
 }
 

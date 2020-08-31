@@ -9,33 +9,33 @@
 
 /* Establishes the top of the calculator*/
 .calculator-top {
-  border-top: 2px solid #131111;
-  border-right: 2px solid #131111;
-  border-left: 2px solid #131111;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  width: 400px;
-  font-size: 3em;
-  padding-right: 2%;
-  padding-left: 2%;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  grid-area: 1 / span 4;
+}
+
+input {
+  background: none;
+  border: none;
+  box-shadow: none;
+  border-bottom: 2px solid #131111;
   text-align: right;
-  align-items: right;
+  font-size: 3em;
+}
+
+::placeholder {
+  color: #131111;
 }
 
 /* Establishes the grid for the calculator buttons*/
 .calculator-body {
   display: grid;
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 4%;
-  width: 400px;
+  width: 300px;
   height: 400px;
   padding: 2%;
   border: 2px solid #131111;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-radius: 5px;
 }
 
 /* Gives the calculator buttons styling */
@@ -51,12 +51,12 @@
 }
 
 .button.clear-button {
-  grid-area: 1 / span 3;
+  grid-area: 2 / span 3;
   background-color: #3473DB;
 }
 
 .button.zero-button {
-  grid-area: 5 / span 3;
+  grid-area: 6 / span 3;
 }
 
 .button.equals-button {
